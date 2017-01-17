@@ -13,7 +13,9 @@ public class Multiplication_Table {
 		Scanner input = new Scanner(System.in);
 		inputNum = input.nextInt();
 		
+		for(number = 1; number<= 9; number++);
 		
+		System.out.println(inputNum * number);
 
 	}
 
