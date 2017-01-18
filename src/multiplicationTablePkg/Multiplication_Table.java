@@ -1,21 +1,29 @@
 package multiplicationTablePkg;
 
-import java.util.Scanner;
+
 
 public class Multiplication_Table {
+	
+	private static final int FIRST_NUMBER = 1;
+	private static final int LAST_NUMBER = 9;
+	
+	int a,b;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		int inputNum;
-		int number;
+		System.out.println("   ");
 		
-		Scanner input = new Scanner(System.in);
-		inputNum = input.nextInt();
 		
-		for(number = 1; number<= 9; number++);
-		
-		System.out.println(inputNum * number);
+		for(int a = FIRST_NUMBER; a <= LAST_NUMBER; a++ ){
+			
+			System.out.println("");
+			
+			for(int b = FIRST_NUMBER; b <= LAST_NUMBER; b++){
+			
+				System.out.print("   " + a*b + "   ");
+			}
+			System.out.println("    ");
+		}
 
 	}
 
